@@ -1225,6 +1225,8 @@ declare module Ammo {
         generateClusters(k: number, maxiterations?: number): number;
         generateBendingConstraints(distance: number, mat: Material): number;
         upcast(colObj: btCollisionObject): btSoftBody;
+        getRestLengthScale(): number;
+        setRestLengthScale(restLength: number): void;
     }
     class btSoftBodyRigidBodyCollisionConfiguration extends btDefaultCollisionConfiguration {
         constructor(info?: btDefaultCollisionConstructionInfo);
